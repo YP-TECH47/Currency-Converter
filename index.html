@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Currency Converter</h1>
+      <div class="input-box">
+        <p class="entr-amnt">Enter your Ammount :</p>
+        <input
+          type="number"
+          name="number"
+          id="number"
+          value="100"
+          maxlength="10"
+        />
+      </div>
+      <div id="main-cont">
+        <div class="selected-cont">
+          <img id="image" src="https://flagsapi.com/US/flat/64.png" alt="country-image" />
+          <p id="from">From :</p>
+          <select  name="from" id="select" class="from-select">
+            
+          </select>
+        </div>
+        <div class="icons">
+          <i class="fa-solid fa-arrow-right-arrow-left sizing-icon"></i>
+        </div>
+        <div class="selected-cont">
+          <img id="image" src="https://flagsapi.com/IN/flat/64.png" alt="country-image" />
+          <p id="to">To :</p>
+          <select name="to" id="select" class="to-select">
+          </select>
+        </div>
+      </div>
+      <div class="msg">
+        <p id="msg">1 USD = 92 INR</p>
+      </div>
+      <button id="btn">Get The Ammount</button>
+    </div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
